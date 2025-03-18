@@ -1,0 +1,20 @@
+
+.cart {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px 15px;
+    margin-top: 10px;
+  }
+
+  .cart:hover {
+    transition: 0.3 ease;
+    size: 0.8;
+  }
+  
+  .cart-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  

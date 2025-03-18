@@ -11,6 +11,8 @@ function DetalleProducto() {
     useEffect(() => {
         fetchProductById(productoId)
             .then((data) => {
+                console.log("Product data:", data); // Add this line
+
                 setProducto(data);
                 setLoading(false);
             });

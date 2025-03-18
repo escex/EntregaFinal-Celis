@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css"; 
+import CartWidget from "./CartWidget";
 
-function Navbar() {
+function Navbar({ onCartClick}) {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -20,6 +21,8 @@ function Navbar() {
                 <li><Link to="/category/acoples">Acoples Chicago</Link></li>
                 <li><Link to="/category/repuestos">Repuestos Perforadora</Link></li>
             </ul>
+            <CartWidget onClick={onCartClick}/>
+
         </nav>
     );
 }

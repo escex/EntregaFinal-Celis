@@ -39,6 +39,7 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 15px;
     padding: 8px 12px;
     border-radius: 5px;
     transition: background 0.3s ease;
