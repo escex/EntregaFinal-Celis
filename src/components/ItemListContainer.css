@@ -1,18 +1,18 @@
 
 .item-list-container {
     position: fixed;
-    top: 108px; /* Adjust based on the height of your header */
+    top: 108px; 
     right: 25px;
     width: 300px;
     height: 400px;
     background: #222;
     color: white;
-    border: 3px solid black; /* Same border color as header title */
+    border: 3px solid black; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000;
   }
   
   .item-list-container h2 {
