@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/NavegaLasRutas-Celis/static/css/main.d9d755f6.css",
-    "main.js": "/NavegaLasRutas-Celis/static/js/main.1b346ca8.js",
+    "main.js": "/NavegaLasRutas-Celis/static/js/main.553e549a.js",
     "static/js/453.00f0eb71.chunk.js": "/NavegaLasRutas-Celis/static/js/453.00f0eb71.chunk.js",
     "static/media/pixelcart.png": "/NavegaLasRutas-Celis/static/media/pixelcart.59593f9a3e8861cb40d7.png",
     "index.html": "/NavegaLasRutas-Celis/index.html",
     "main.d9d755f6.css.map": "/NavegaLasRutas-Celis/static/css/main.d9d755f6.css.map",
-    "main.1b346ca8.js.map": "/NavegaLasRutas-Celis/static/js/main.1b346ca8.js.map",
+    "main.553e549a.js.map": "/NavegaLasRutas-Celis/static/js/main.553e549a.js.map",
     "453.00f0eb71.chunk.js.map": "/NavegaLasRutas-Celis/static/js/453.00f0eb71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9d755f6.css",
-    "static/js/main.1b346ca8.js"
+    "static/js/main.553e549a.js"
   ]
 }
