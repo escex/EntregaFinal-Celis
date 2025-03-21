@@ -27,7 +27,7 @@ function Productos() {
                 {productos.map((producto) => (
                     <article key={producto.id}>
                         <h5>{producto.name}</h5>
-                        <img src={`${process.env.PUBLIC_URL}{producto.image}`} alt={producto.name} />
+                        <img src={`${process.env.PUBLIC_URL}${producto.image}`} alt={producto.name} />
                         <Link to={`/productos/${producto.id}`}>Ver Detalle</Link>
                     </article>
                 ))}
