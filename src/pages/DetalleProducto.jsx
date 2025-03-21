@@ -29,7 +29,7 @@ function DetalleProducto() {
 
     return (
         <div className="detalleproducto">
-            <img src={`${process.env.PUBLIC_URL}${producto.image}`} alt={producto.name} />
+            <img src={`${process.env.PUBLIC_URL}/public/${producto.image}`} alt={producto.name} />
             <h1>{producto.name}</h1>
             <h2>Categoría: {producto.category}</h2>
             {producto.material && <h3>Material: {producto.material}</h3>}
