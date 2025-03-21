@@ -1,27 +1,48 @@
-
 .item-list-container {
-    position: fixed;
-    top: 108px; 
-    right: 25px;
-    width: 300px;
-    height: 400px;
-    background: #222;
-    color: white;
-    border: 3px solid black; 
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    z-index: 1000;
-  }
-  
-  .item-list-container h2 {
-    margin-top: 0;
-    color: hsl(0, 0%, 100%);
-  }
-  
-  .item-list-container p {
-    margin-bottom: 0;
-    color: hsl(0, 0%, 100%);
-    font-family: "Pixelify Sans", serif;
-  }
+  background: white;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item button {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-item button:hover {
+  background: #c9302c;
+}
+
+.cart-total {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  text-align: right;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+}

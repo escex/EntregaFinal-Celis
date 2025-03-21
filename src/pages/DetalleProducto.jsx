@@ -1,22 +1,28 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchProductById } from "../data";
-import "./DetalleProducto.css"
+import ItemCount from "../components/ItemCount";
+import { useCart } from "../components/CartContext"; 
+import "./DetalleProducto.css";
 
 function DetalleProducto() {
     const { productoId } = useParams();
+    const { addToCart } = useCart(); 
     const [producto, setProducto] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchProductById(productoId)
-            .then((data) => {
-                console.log("Product data:", data); // Add this line
-
-                setProducto(data);
-                setLoading(false);
-            });
+        fetchProductById(productoId).then((data) => {
+            setProducto(data);
+            setLoading(false);
+        });
     }, [productoId]);
+
+    const handleAddToCart = (quantity) => {
+        if (producto) {
+            addToCart(producto, quantity);
+        }
+    };
 
     if (loading) return <h2 className="loading">Cargando detalles del producto...</h2>;
     if (!producto) return <h2 className="error">Producto no encontrado</h2>;
@@ -28,9 +34,14 @@ function DetalleProducto() {
             <h2>Categoría: {producto.category}</h2>
             {producto.material && <h3>Material: {producto.material}</h3>}
             <h4>$ {producto.price.toLocaleString()}</h4>
+
+  
+            <ItemCount stock={producto.stock || 10} initial={1} onAdd={handleAddToCart} />
+
             <Link to="/productos">Volver</Link>
         </div>
     );
 }
 
 export default DetalleProducto;
+

@@ -1,0 +1,58 @@
+.checkout-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .checkout-container input[type="email"] {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+  .checkout-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .checkout-total {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    text-align: right;
+    font-weight: bold;
+    border-top: 2px solid #ddd;
+  }
+  
+  .checkout-button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .checkout-button:hover {
+    background: #218838;
+  }
+  
