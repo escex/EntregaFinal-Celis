@@ -24,6 +24,7 @@ function App() {
         {showItemList && <ItemListContainer />}
         <Routes>
           <Route path="/" element={<Productos />} />
+          <Route path="/EntregaFinal-Celis" element={<Productos />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/productos/:productoId" element={<DetalleProducto />} />
           <Route path="/category/:categoryId" element={<Category />} />
