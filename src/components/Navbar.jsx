@@ -7,7 +7,7 @@ function Navbar({ onCartClick}) {
         <nav className="navbar">
             <div className="navbar-logo">
                 <Link to="/">
-                    <img src="/images/logotitle.jpg" alt="Logo Title" className="logo-title" />
+                    <img src={`${process.env.PUBLIC_URL}/images/logotitle.jpg`} alt="Logo Title" className="logo-title" />
                 </Link>
             </div>
 
